@@ -1,0 +1,136 @@
+body
+{
+	font-family:Cambria;
+	background: #fbeec7;
+	margin:0px;
+}
+
+#table
+{
+	border-bottom:solid black 1px;
+	border-top:solid black 1px;
+	border-left:solid black 1px;
+	border-right:solid black 1px;
+}
+
+#footer
+{
+	text-align:center;
+	font-size:7px;
+	font-weight:bold;
+	padding:5px;
+}
+
+a, a:link, a:visited
+{
+	text-decoration:none;
+	color:#FF0000;
+}
+
+a:hover
+{
+	text-decoration:underline;
+	color:Blue;
+}
+
+#navigation {
+	width: 100%;
+	top: 5em;
+	text-align:left;
+	left: 1em;	
+	font-size:12px;
+}
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align:left;
+}
+#navigation li {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#navigation li a  {
+	display: block;
+	padding: 5px 5px 5px 0.5em;
+	border-left: 0px solid #711515;
+	border-right: 1px solid #711515;
+	background-color: #009900;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align:left;
+}
+#navigation li a:hover {
+	background-color: #FFFFFF;
+	text-align:left;
+	color: #000000;
+}
+
+#navigation ul ul li {
+	border-bottom: 1px solid #711515;
+	margin:0;
+	background-color: #006600;
+	color: #711515;
+	text-align:left;
+}
+#navigation ul ul a:link, #navigation ul ul a:visited {
+	background-color: #006600;
+	color: #FFFFFF;
+	text-align:left;
+}
+#navigation ul ul a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align:left;
+}
+
+#BallotButton {
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+#sizer      { width: 340px; margin: 0 auto; padding: 144px 200px 240px; background: url(highlight.png) no-repeat 50% 0; }
+/*form        { width: 300px; padding: 18px 20px 0; margin-bottom: 18px; background: #4f84b8 url(box-grad.png) repeat-x 0 0; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); }*/
+fieldset    { border: 0; padding-bottom: 9px; }
+label       { display: block; cursor: pointer; line-height: 20px; padding-bottom: 9px; text-shadow: 0 -1px 0 rgba(0,0,0,.2); }
+.radios     { padding-top: 18px; background: url(divider.png) repeat-x 0 0; }
+.label_check input,
+.label_radio input  { margin-right: 5px; }
+#footer     { width: 100%; text-align: center; font-size: 12px; }
+#footer a   { padding: 2px 10px; margin: 0 2px; color: #999; background: #ddd; text-decoration: none; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; }
+#footer a:hover,
+#footer a:focus { color: #fff; background: #333; background: rgba(0,0,0,.3); }
+
+.has-js .label_check,
+.has-js .label_radio    { padding-left: 34px; }
+.has-js .label_radio    { background: url(radio-off.png) no-repeat; }
+.has-js .label_check    { background: url(check-off.png) no-repeat; }
+.has-js label.c_on      { background: url(check-on.png) no-repeat; }
+.has-js label.r_on      { background: url(radio-on.png) no-repeat; }
+.has-js .label_check input,
+.has-js .label_radio input  { position: absolute; left: -9999px; }
+
+ .tooltip .pointer, .tooltip .inner-pointer {  
+	 position: absolute;  
+	 width:0;  
+	 height:0;  
+	 border-bottom-width: 0;  
+	 background: none;  
+ }  
+ .tooltip .pointer {  
+	 border-left: 7px solid transparent;  
+	 border-right: 7px solid transparent;  
+	 border-top: 14px solid #999;  
+	 bottombottom:    -14px;  
+	 rightright: auto;  
+	 left: 5%;  
+	 margin-left: -7px;  
+ }  
+ .tooltip .inner-pointer {  
+	 border-left: 5px solid transparent;  
+	 border-right: 5px solid transparent;  
+	 border-top: 5px solid #ff3311;  
+	 bottombottom:    auto;  
+	 top: -14px;  
+	 left: -5px;  
+ }

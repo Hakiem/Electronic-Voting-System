@@ -1,0 +1,33 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+#RewriteRule ^(.*)\.html$ $1.php [NC]
+
+RewriteRule ^Results/Results-([0-9]+)\.htm$ Results/Results.php?cgi=$1
+RewriteRule ^Results/Graph-([0-9]+)\.htm$ Results/Graph.php?cgi=$1
+RewriteRule ^Results/Results_Menu.htm$ Results/ResultsMenu.php
+
+RewriteRule ^Administrator.htm$ Administrator.php
+RewriteRule ^Ballot.htm$ Ballot.php
+RewriteRule ^Agent.htm$ Agent.php
+RewriteRule ^thankyou.htm$ thankyou.php
+RewriteRule ^index.htm$ index.php
+RewriteRule ^Results.htm$ ResultsDefault.php
+
+RewriteRule ^login.htm$ login.php
+RewriteRule ^logout.htm$ logout.php
+RewriteRule ^Summary.htm$ Summary.php
+#RewriteRule ^Results/([0-9][0-9])/$ /Results.php?cgi=$1  --  products/12/
+
+#Options -Indexes
+#Prevent Document Listing
+IndexIgnore * 
+
+#ErrorDocument 400 http://www.yourdomain.com/errordocs/400.html
+#ErrorDocument 401 http://www.yourdomain.com/errordocs/401.html
+#ErrorDocument 403 http://www.yourdomain.com/errordocs/403.html
+#ErrorDocument 404 http://www.yourdomain.com/errordocs/404.html
+#ErrorDocument 500 http://www.yourdomain.com/errordocs/500.html 
+
+#The above code would cause filename.html to be the default page of your site, so http://www.domain.com would not go to index.html, but to filename.html
+#DirectoryIndex filename.html
